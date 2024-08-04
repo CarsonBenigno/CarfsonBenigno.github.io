@@ -1,11 +1,11 @@
 const text = document.getElementById("annotation-text");
 
 function annotationOverview() {
-  text.innerHTML = "This overview chart shows the total global sales (in millions of copies) of video games released from 1980-2020 classified by genre. Only games that sold over 100,000 copies have been included."
+  text.innerHTML = "This chart visualizes the total global sales (in millions of copies) of video games released from 1980-2016 classified by genre."
 
-  display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
-    "Top 3 Genres", 
-    "Overall, action, sports, and shooter games sell the best",
+  display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
+    "Highest Selling Genre", 
+    "Across all regions, the highest selling genre is action, selling 1751.2 copies globally.",
     200);
 }
 
