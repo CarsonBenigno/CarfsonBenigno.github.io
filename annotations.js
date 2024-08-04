@@ -1,5 +1,24 @@
 const text = document.getElementById("annotation-text");
 
+// referenced from: https://d3-annotation.susielu.com/#examples
+function annotation(x_pos, y_pos, w, h, offset, dx_pos, dy_pos, title_text, content, wrap) {
+  const type = d3.annotationCalloutRect
+
+  const annotations = [{
+    note: {
+      label: content,
+      title: title_text
+    },
+    x: x_pos - offset/2,
+    y: y_pos - offset/2,
+    dy: dy_pos,
+    dx: dx_pos,
+    subject: {
+      width: w + offset,
+      height: h + offset
+    }
+  }]
+
 function annotationOverview() {
   text.innerHTML = "This chart visualizes the total global sales (in millions of copies) of video games released from 1980-2016 classified by genre."
 
@@ -54,26 +73,6 @@ function annotationOther() {
     "The top 3 genres also stay consistent with the global trend in other regions combined.",
     200);
 }
-
-// referenced from: https://d3-annotation.susielu.com/#examples
-function display_svg_annotation(x_pos, y_pos, w, h, offset, dx_pos, dy_pos, title_text, content, wrap) {
-  const type = d3.annotationCalloutRect
-
-  const annotations = [{
-    note: {
-      label: content,
-      title: title_text
-    },
-    //can use x, y directly instead of data
-    x: x_pos - offset/2,
-    y: y_pos - offset/2,
-    dy: dy_pos,
-    dx: dx_pos,
-    subject: {
-      width: w + offset,
-      height: h + offset
-    }
-  }]
 
   const makeAnnotations = d3.annotation()
     .notePadding(10)
