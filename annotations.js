@@ -1,6 +1,6 @@
 const text = document.getElementById("annotation-text");
 
-function display_annotation_overview() {
+function annotationOverview() {
   text.innerHTML = "This overview chart shows the total global sales (in millions of copies) of video games released from 1980-2020 classified by genre. Only games that sold over 100,000 copies have been included."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
@@ -9,7 +9,7 @@ function display_annotation_overview() {
     200);
 }
 
-function display_annotation_na() {
+function annotationNA() {
   text.innerHTML = "North America contributes to about half of game sales globally, which would heavily influence genre popularity in the overview chart. However, we see roleplaying games shift from 4th to 7th."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
@@ -18,7 +18,7 @@ function display_annotation_na() {
     200);
 }
 
-function display_annotation_eu() {
+function annotationEU() {
   text.innerHTML = "In Europe, the most popular genres again stay the same. However, there is a signifcant shift in the middle group, again with RPGs moving from 4th to 7th."
 
   display_svg_annotation(50+barWidth*3, 50, barWidth*4, 300, 10, 300, 100, 
@@ -27,7 +27,7 @@ function display_annotation_eu() {
     200);
 }
 
-function display_annotation_jp() {
+function annotationJP() {
   text.innerHTML = "Japan overall buys fewer video game copies than North America and Europe. However, the market is also very different. RPGs are immensely popular, while shooters are the least. Racing is also far less popular."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
@@ -41,7 +41,7 @@ function display_annotation_jp() {
     200);
 }
 
-function display_annotation_other() {
+function annotationOther() {
   text.innerHTML = "This section is a compilation of all the other regions. They seem to follow the global trends resonably closely. However, the lower popularity genres are slightly different."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
@@ -50,8 +50,7 @@ function display_annotation_other() {
     200);
 }
 
-// add extra annotations
-// https://d3-annotation.susielu.com/#examples
+// referenced from: https://d3-annotation.susielu.com/#examples
 function display_svg_annotation(x_pos, y_pos, w, h, offset, dx_pos, dy_pos, title_text, content, wrap) {
   const type = d3.annotationCalloutRect
 
