@@ -26,9 +26,9 @@ function annotationNA() {
 function annotationEU() {
   text.innerHTML = "In Europe, the most popular genres again stay the same. However, there is a signifcant shift in the middle group, again with RPGs moving from 4th to 7th."
 
-  display_svg_annotation(50+barWidth*3, 50, barWidth*4, 300, 10, 300, 100, 
+  display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "Europe", 
-    "The middle most popular genres are reversed from the global popularity",
+    "In North America, the top three highest selling genres are also consistent with the global trend.",
     200);
 }
 
