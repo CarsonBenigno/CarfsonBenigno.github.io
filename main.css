@@ -17,7 +17,7 @@ svg {
   border: 2px solid #66c0f4; /* Border */
 }
 
-.text-container, .text-container-a {
+.text, .annotation-text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -92,6 +92,6 @@ rect.annotation-note-bg {
 }
 
 /* Additional text styles */
-.text-container, .text-container-a {
+.text, .annotation-text {
   color: #c0c0c0;
 }
