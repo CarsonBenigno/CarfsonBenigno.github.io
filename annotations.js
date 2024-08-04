@@ -46,7 +46,7 @@ function annotationOverview() {
 }
 
 function annotationNA() {
-  text.innerHTML = "In North America, the top three most popular genres stay the same."
+  text.innerHTML = "In North America, the top three most popular genres mirror overall global preferences."
 
   annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "North America", 
@@ -55,7 +55,7 @@ function annotationNA() {
 }
 
 function annotationEU() {
-  text.innerHTML = "In Europe, the top three most popular genres again stay the same. However, there is some movement among the middlemost genres."
+  text.innerHTML = "In Europe, the top three most popular genres again mirror overall global preferences. However, there is some movement among the middlemost genres."
 
   annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Europe", 
