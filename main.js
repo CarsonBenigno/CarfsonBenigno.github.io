@@ -30,7 +30,7 @@ async function init() {
   main_chart = d3.select("#main_chart");
 
   draw_chart(main_chart, copiesSoldGlobal);
-  display_annotation_overview();
+  annotationOverview();
 
   d3.select('body').append('div')
     .attr('id', 'tooltip');
