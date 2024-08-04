@@ -19,6 +19,18 @@ function annotation(x_pos, y_pos, w, h, offset, dx_pos, dy_pos, title_text, cont
     }
   }]
 
+  const makeAnnotations = d3.annotation()
+    .notePadding(10)
+    .textWrap(wrap)
+    .type(type)
+    .annotations(annotations)
+
+  d3.select("svg")
+    .append("g")
+    .attr("class", "annotation-group")
+    .call(makeAnnotations)
+}
+
 function annotationOverview() {
   text.innerHTML = "This chart visualizes the total global sales (in millions of copies) of video games released from 1980-2016 classified by genre."
 
@@ -72,16 +84,4 @@ function annotationOther() {
     "Other Regions", 
     "The top 3 genres also stay consistent with the global trend in other regions combined.",
     200);
-}
-
-  const makeAnnotations = d3.annotation()
-    .notePadding(10)
-    .textWrap(wrap)
-    .type(type)
-    .annotations(annotations)
-
-  d3.select("svg")
-    .append("g")
-    .attr("class", "annotation-group")
-    .call(makeAnnotations)
 }
