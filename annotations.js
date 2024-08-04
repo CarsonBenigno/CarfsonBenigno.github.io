@@ -39,10 +39,10 @@ function annotationOverview() {
     "Globally, the highest selling genre is action.",
     200);
 
-  annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
-    "Lowest Selling Genre", 
-    "Globally, the lowest selling genre is strategy.",
-    200);
+  // annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
+  //  "Lowest Selling Genre", 
+  //  "The lowest selling genre is strategy.",
+  //  200);
 }
 
 function annotationNA() {
@@ -68,7 +68,7 @@ function annotationJP() {
 
   annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Japan", 
-    "In Japan, the highest selling genre by far becomes role-playing, seeing 352.3 million copies sold and breaking away from the global trend.",
+    "In Japan, the highest selling genre by far becomes role-playing.",
     200);
 
   annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
