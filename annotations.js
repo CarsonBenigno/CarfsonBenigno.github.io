@@ -15,7 +15,8 @@ function annotationOverview() {
 }
 
 function annotationNA() {
-  text.innerHTML = "North America contributes to about half of game sales globally, which would heavily influence genre popularity in the overview chart. However, we see roleplaying games shift from 4th to 7th."
+  text.innerHTML = "North America accounts for approximately 50% of global game sales, significantly impacting genre popularity in the overall chart. Despite this, role-playing games drop from 4th to 7th place.
+"
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "North America", 
