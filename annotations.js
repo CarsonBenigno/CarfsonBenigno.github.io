@@ -19,7 +19,7 @@ function annotationNA() {
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "North America", 
-    "The top 3 genres stay consistent with the global model",
+    "In North America, the top three highest selling genres are consistent with the global trend.",
     200);
 }
 
