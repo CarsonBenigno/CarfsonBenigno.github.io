@@ -1,1 +1,1 @@
-# narrative-visualization-test
+# CS 416 Narrative Visualization

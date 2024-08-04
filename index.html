@@ -1,1 +1,45 @@
-<h1>Hello!</hi>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+  <script src='https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js'></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Video game font -->
+</head>
+
+<body onload='init()'>
+  <h1>Global Video Game Sales by Genre</h1>
+  
+  <div class="text-container">
+    <b>Click</b> on the buttons below to view regional breakdowns.
+    <br>
+    <b>Hover</b> over bars to see more details.
+  </div>
+
+  <div class="text-container-a">
+    <text id="annotation-text"></text>
+  </div>
+
+  <div id="slideshow-buttons">
+    <button onclick="change_slide(main_chart, copiesSoldGlobal); toggle_active(this); annotationOverview()" class="active">Overview</button>
+    <button onclick="change_slide(main_chart, copiesSoldNA); toggle_active(this); annotationNA()">NA</button>
+    <button onclick="change_slide(main_chart, copiesSoldEU); toggle_active(this); annotationEU()">EU</button>
+    <button onclick="change_slide(main_chart, copiesSoldJP); toggle_active(this); annotationJP()">JP</button>
+    <button onclick="change_slide(main_chart, copiesSoldOther); toggle_active(this); annotationOther()">Other</button>
+  </div>
+
+  <!-- referenced from: https://stackoverflow.com/questions/41940439/display-multiple-d3-js-charts-in-a-single-html-page -->
+  <svg id="main_chart" width=800 height=400></svg>
+
+  <div class="text-container">
+    <p><b>Note:</b> the y-scale changes on every slide. This is to more easily compare the popularity of each genre for specific regions and worldwide.</p>
+    <br>
+    <p>The data used was provided by <a href="https://www.kaggle.com/datasets/gregorut/videogamesales?resource=download">Video Game Sales by Gregory Smith on Kaggle</a></p>
+    <p>View the source code on <a href="https://github.com/CarsonBenigno/Narrative-Visualization">GitHub</a>.</p>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="annotations.js"></script>
+</body>
+</html>
