@@ -15,29 +15,29 @@ function annotationOverview() {
 }
 
 function annotationNA() {
-  text.innerHTML = "North America accounts for approximately 50% of global game sales, significantly impacting genre popularity in the overall chart. Despite this, role-playing games drop from 4th to 7th place."
+  text.innerHTML = "In North America, the top three most popular genres stay the same."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "North America", 
-    "In North America, the top three highest selling genres are consistent with the global trend.",
+    "In North America, the highest selling genre is consistent with the global trend, with action games selling 877.8 million copies.",
     200);
 }
 
 function annotationEU() {
-  text.innerHTML = "In Europe, the most popular genres again stay the same. However, there is a signifcant shift in the middle group, again with RPGs moving from 4th to 7th."
+  text.innerHTML = "In Europe, the top three most popular genres again stay the same. However, there is some movement among the middlemost genres."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "Europe", 
-    "In North America, the top three highest selling genres are also consistent with the global trend.",
+    "In Europe, the highest selling genre is also consistent with the global trend, with action games selling 525.0 million copies.",
     200);
 }
 
 function annotationJP() {
-  text.innerHTML = "Japan overall buys fewer video game copies than North America and Europe. However, the market is also very different. RPGs are immensely popular, while shooters are the least. Racing is also far less popular."
+  text.innerHTML = "In Japan, the market is strikingly different in both preferred genres and the number of copies sold."
 
   display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "Japan", 
-    "RPGs are much more popular in Japan than in any other region",
+    "In Japan, the highest selling genre by far becomes role-playing, seeing 352.3 million copies sold and breaking away from the global trend.",
     200);
 
   display_svg_annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
