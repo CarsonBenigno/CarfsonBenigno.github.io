@@ -35,7 +35,7 @@ function annotationOverview() {
   text.innerHTML = "This chart visualizes the total global sales (in millions of copies) of video games released from 1980-2016 classified by genre."
 
   annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
-    "Highest Selling Genre", 
+    "Global", 
     "Globally, the highest selling genre is action.",
     200);
 
