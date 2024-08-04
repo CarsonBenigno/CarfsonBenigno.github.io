@@ -78,7 +78,7 @@ function annotationJP() {
 }
 
 function annotationOther() {
-  text.innerHTML = "This section is a compilation of all the other regions. They seem to follow the global trends resonably closely. However, the lower popularity genres are slightly different."
+  text.innerHTML = "This section compiles data from all other regions, which generally align with global trends. However, there are slight differences in the less popular genres."
 
   annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "Other Regions", 
