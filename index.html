@@ -16,7 +16,7 @@
   </div>
 
   <div id="slideshow-buttons">
-    <button onclick="change_slide(main_chart, copiesSoldGlobal); toggle_active(this); annotationOverview()" class="active">Overview</button>
+    <button onclick="change_slide(main_chart, copiesSoldGlobal); toggle_active(this); annotationOverview()" class="active">Global</button>
     <button onclick="change_slide(main_chart, copiesSoldNA); toggle_active(this); annotationNA()">NA</button>
     <button onclick="change_slide(main_chart, copiesSoldEU); toggle_active(this); annotationEU()">EU</button>
     <button onclick="change_slide(main_chart, copiesSoldJP); toggle_active(this); annotationJP()">JP</button>
@@ -31,7 +31,9 @@
   </div>
 
   <div class="text">
-    <p>Note: The y-scale adjusts with each slide to facilitate easier comparison of each genre's popularity across specific regions and globally.</p>
+    <p>Note that some regions sell more overall copies of video games than others, affecting their impact on global trends. 
+    <b>  
+    To account for this, the y-scale adjusts with each scene to facilitate easier comparison of each genre's popularity across specific regions and globally.</p>
   </div>
   
   <!-- <div class="text">
