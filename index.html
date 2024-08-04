@@ -15,10 +15,6 @@
     <b>Click</b> on the buttons for regional breakdowns. <b>Hover</b> over the bars for more details.
   </div>
 
-  <div class="annotation-text">
-    <text id="annotation-text"></text>
-  </div>
-
   <div id="slideshow-buttons">
     <button onclick="change_slide(main_chart, copiesSoldGlobal); toggle_active(this); annotationOverview()" class="active">Overview</button>
     <button onclick="change_slide(main_chart, copiesSoldNA); toggle_active(this); annotationNA()">NA</button>
@@ -30,6 +26,10 @@
   <!-- referenced from: https://stackoverflow.com/questions/41940439/display-multiple-d3-js-charts-in-a-single-html-page -->
   <svg id="main_chart" width=800 height=400></svg>
 
+  <div class="annotation-text">
+    <text id="annotation-text"></text>
+  </div>
+  
   <div class="text">
     <p><b>Note:</b> The y-scale adjusts with each slide to facilitate easier comparison of each genre's popularity across specific regions and globally.</p>
     <br>
