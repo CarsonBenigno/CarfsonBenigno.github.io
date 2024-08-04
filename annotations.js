@@ -3,12 +3,12 @@ const text = document.getElementById("annotation-text");
 function annotationOverview() {
   text.innerHTML = "This chart visualizes the total global sales (in millions of copies) of video games released from 1980-2016 classified by genre."
 
-  display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
+  annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Highest Selling Genre", 
     "Globally, the highest selling genre is action.",
     200);
 
-  display_svg_annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
+  annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
     "Lowest Selling Genre", 
     "Globally, the lowest selling genre is strategy.",
     200);
@@ -17,7 +17,7 @@ function annotationOverview() {
 function annotationNA() {
   text.innerHTML = "In North America, the top three most popular genres stay the same."
 
-  display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
+  annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "North America", 
     "In North America, the highest selling genre is consistent with the global trend, with action games selling 877.8 million copies.",
     200);
@@ -26,7 +26,7 @@ function annotationNA() {
 function annotationEU() {
   text.innerHTML = "In Europe, the top three most popular genres again stay the same. However, there is some movement among the middlemost genres."
 
-  display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
+  annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Europe", 
     "In Europe, the highest selling genre is also consistent with the global trend, with action games selling 525.0 million copies.",
     200);
@@ -35,12 +35,12 @@ function annotationEU() {
 function annotationJP() {
   text.innerHTML = "In Japan, the market is strikingly different in both preferred genres and the number of copies sold."
 
-  display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
+  annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Japan", 
     "In Japan, the highest selling genre by far becomes role-playing, seeing 352.3 million copies sold and breaking away from the global trend.",
     200);
 
-  display_svg_annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
+  annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
     "Shooters", 
     "The 3rd most popular genre globally globally sees the least copies sold.",
     200);
@@ -49,7 +49,7 @@ function annotationJP() {
 function annotationOther() {
   text.innerHTML = "This section is a compilation of all the other regions. They seem to follow the global trends resonably closely. However, the lower popularity genres are slightly different."
 
-  display_svg_annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
+  annotation(50, 50, barWidth*3, 300, 10, 350, 10, 
     "Other Regions", 
     "The top 3 genres also stay consistent with the global trend in other regions combined.",
     200);
