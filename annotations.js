@@ -5,7 +5,13 @@ function annotationOverview() {
 
   display_svg_annotation(50, 50, barWidth*1, 300, 10, 350, 10, 
     "Highest Selling Genre", 
-    "Across all regions, the highest selling genre is action, selling 1751.2 copies globally.",
+    "Globally, the highest selling genre is action, selling 1751.2 million copies.",
+    200);
+
+  display_svg_annotation(50+barWidth*11, 50, barWidth, 300, 10, -100, 140, 
+    "Lowest Selling Genre", 
+    "Globally, the lowest selling genre is strategy, selling 175.1 million copies.",
+    200);",
     200);
 }
 
