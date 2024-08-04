@@ -29,6 +29,10 @@ svg {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.annotation-text {
+  margin-top: 30px;
+} 
+
 #slideshow-buttons {
   display: flex;
   justify-content: center;
